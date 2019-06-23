@@ -1,2 +1,0 @@
-# beauty-uncorked
-Beauty-Uncorked
