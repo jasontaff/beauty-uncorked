@@ -7,47 +7,52 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package WordPress
- * @subpackage Twenty_Nineteen
- * @since 1.0.0
+ * @subpackage Twenty_Seventeen
+ * @since 1.0
+ * @version 1.0
  */
-?><!doctype html>
-<html <?php language_attributes(); ?>>
+
+?><!DOCTYPE html>
+<html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="profile" href="https://gmpg.org/xfn/11" />
-	<?php wp_head(); ?>
+<meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+
+<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentynineteen' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyseventeen' ); ?></a>
 
-		<header id="masthead" class="<?php echo is_singular() && twentynineteen_can_show_post_thumbnail() ? 'site-header featured-image' : 'site-header'; ?>">
+	<header id="masthead" class="site-header" role="banner">
 
-			<div class="site-branding-container">
-				<?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
-			</div><!-- .site-branding-container -->
+		<?php get_template_part( 'template-parts/header/header', 'image' ); ?>
 
-			<?php if ( is_singular() && twentynineteen_can_show_post_thumbnail() ) : ?>
-				<div class="site-featured-image">
-					<?php
-						twentynineteen_post_thumbnail();
-						the_post();
-						$discussion = ! is_page() && twentynineteen_can_show_post_thumbnail() ? twentynineteen_get_discussion_data() : null;
+		<?php if ( has_nav_menu( 'top' ) ) : ?>
+			<div class="navigation-top">
+				<div class="wrap">
+					<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
+				</div><!-- .wrap -->
+			</div><!-- .navigation-top -->
+		<?php endif; ?>
 
-						$classes = 'entry-header';
-					if ( ! empty( $discussion ) && absint( $discussion->responses ) > 0 ) {
-						$classes = 'entry-header has-discussion';
-					}
-					?>
-					<div class="<?php echo $classes; ?>">
-						<?php get_template_part( 'template-parts/header/entry', 'header' ); ?>
-					</div><!-- .entry-header -->
-					<?php rewind_posts(); ?>
-				</div>
-			<?php endif; ?>
-		</header><!-- #masthead -->
+	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<?php
+
+	/*
+	 * If a regular post or page, and not the front page, show the featured image.
+	 * Using get_queried_object_id() here since the $post global may not be set before a call to the_post().
+	 */
+	if ( ( is_single() || ( is_page() && ! twentyseventeen_is_frontpage() ) ) && has_post_thumbnail( get_queried_object_id() ) ) :
+		echo '<div class="single-featured-image-header">';
+		echo get_the_post_thumbnail( get_queried_object_id(), 'twentyseventeen-featured-image' );
+		echo '</div><!-- .single-featured-image-header -->';
+	endif;
+	?>
+
+	<div class="site-content-contain">
+		<div id="content" class="site-content">
