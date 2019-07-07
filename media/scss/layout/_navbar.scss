@@ -1,5 +1,7 @@
 #mainNav {
     background-color: $themeDark;
+    font-weight: bold;
+    text-transform: uppercase;
     .navbar-toggler {
       padding: 15px;
    
@@ -62,7 +64,8 @@
         font-size: 26px;
         line-height: 50px;
         img {
-          height: 46px;
+          width: auto;
+          height: 70px;
         }
       }
       .navbar-collapse {
@@ -75,6 +78,7 @@
             > .nav-link { 
               color: #605d61;
               padding: 15px;
+              font-size: 18px;
               &.active,
               &.active:focus,
               &.active:hover {
