@@ -7,7 +7,7 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
-
+    <link href="<?php echo get_stylesheet_directory_uri()?>/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <?php wp_head(); ?>
 
 </head>

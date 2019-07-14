@@ -1,0 +1,38 @@
+footer#footer {
+    padding: 50px 0 20px;
+    color: fade-out(white, 0.3);
+    background-color: $secondaryColor;
+    margin-top: 40px;
+ 
+    img.logo{
+        width: 300px;
+    }
+
+    a {
+        color: fade-out(white, 0.3);
+        &:hover {
+            color: white;
+        }
+    }
+    p {
+        font-size: 22px;
+    }
+    .footer-contact-details {
+        margin: 75px 0;
+    }
+    .footer-social {
+        margin-bottom: 75px;
+    }
+    .copyright {
+        font-size: 1rem;
+    }
+
+    @include screen(480) {}
+    @include screen('sm') {}
+    //992px
+    @include screen('md') {
+     margin-top: 90px;
+    }
+    @include screen('lg') {}
+
+}
