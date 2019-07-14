@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name:hoime
+Template Name:about
 */
 get_header();
 ?>
