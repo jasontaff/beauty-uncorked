@@ -1,4 +1,4 @@
-#video-container {
+#hero {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -33,6 +33,34 @@
         top: 0; 
       }
       
+      img{
+        width: 300px;
+      
+
+        
+        
+        
+      }
+
+
+      @include screen(480) {}
+      @include screen('sm') {
+
+        img{
+          width: 500px;
+        }
+
+      }
+      //992px
+      @include screen('md') {
+        img{
+          width: 650px;
+        }
+        
+      }
+      @include screen('lg') {}
+    
+
 
   }
   

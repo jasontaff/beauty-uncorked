@@ -1,7 +1,8 @@
 #mainNav {
-    background-color: $themeDark;
+    background-color: $secondaryColor;
     font-weight: bold;
     text-transform: uppercase;
+    position: absolute;
     .navbar-toggler {
       padding: 15px;
    
@@ -10,7 +11,7 @@
       font-size: 14px;
       &:focus,
       &:hover {  
-        color: $themeDark; 
+        color: $secondaryColor; 
         background-color: white;
       }
     }
@@ -30,16 +31,21 @@
           > .nav-link {
             padding-top: 14px; 
             padding-bottom: 15px;
-  
+            border-radius:5px;
             color: white;
+            padding-left: 10px;
             &:focus,
-            &:hover { 
-              color: fade-out(white, 0.5);
+            &:hover {  
+              color: $secondaryColor;;
+              background-color: $primaryColor;
+              transition: 0.5s all;
+            // padding-left: 20px;
+              
             }
             &.active,
             &.active:focus,
             &.active:hover {
-              color: $themePrimary;
+              color: $secondaryColor;
             }
           }
         }
@@ -58,7 +64,7 @@
       &.navbar-shrink {
         padding: 5px 0;
   
-        background-color: $themeDark;
+        background-color: $secondaryColor;
       }
       .navbar-brand {
         font-size: 26px;
@@ -71,26 +77,58 @@
       .navbar-collapse {
         .navbar-nav {
           > .nav-item {
-            margin-right: 5px;
-            &:last-child {
-              margin-right: 0;
-            } 
-            > .nav-link { 
+            margin-right: 25px;
+           
+            &::before{
+              content: ' ';
+              background: url(/wp-content/themes/beauty-uncorked/media/img/bottles-glasses.png);
+              position: absolute;
+              top: 50px;
+              background-repeat: no-repeat;
+              background-size: contain;
+              height: 35px;
+              width: 20px;
+              margin-left: -20px;
+          
+            }
+        
+            > .nav-link{ 
               color: #605d61;
               padding: 15px;
               font-size: 18px;
+            
+              
+        
+              &:last-child {
+                margin-right: 0;
+
+              } 
+            
+
+              &:focus,
+              &:hover {  
+                color: white;
+                background-color: $secondaryColor;
+               
+                border-radius: 5px;
+                
+              }
+
+
               &.active,
               &.active:focus,
               &.active:hover {
-                color: $themePrimary;
-                border-radius: 0;  
-                border-radius: 5px;
-                background-color: white;
+                color: white;
+                background-color: $secondaryColor;
+                transition: 0.5s all;
+               
               }
             }
           }
         }
       }
     }
+
+
   }
   
