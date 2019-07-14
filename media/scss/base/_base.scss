@@ -7,6 +7,10 @@ body {
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
 
+    p{
+      font-size: 16px;
+    }
+
     h2{
       font-size: 21px;
       text-align: center;
@@ -21,6 +25,9 @@ body {
       h2{
         font-size: 31px;
       }
+      p{
+        font-size: 18px;
+      }
     }
     @include screen('lg') {}
 
@@ -28,29 +35,24 @@ body {
   }
 
 
-
-
-
-
-
-//////
- section:not(#hero){
-  margin-top: 40px;
-  margin-bottom: 40px;
-
-  
-  
-  
-
-  
-  @include screen(480) {}
-  @include screen('sm') {}
-  //992px
-  @include screen('md') {
-    margin-top: 90px;
-    margin-bottom: 90px;
+  img{
+    max-width: 100%;
   }
-  @include screen('lg') {}
+
+//////////////////////////
+    section:not(#hero){
+      margin-top: 40px;
+      margin-bottom: 40px;
+
+      
+      @include screen(480) {}
+      @include screen('sm') {}
+      //992px
+      @include screen('md') {
+        margin-top: 90px;
+        margin-bottom: 90px;
+      }
+      @include screen('lg') {}
 
  }
 
