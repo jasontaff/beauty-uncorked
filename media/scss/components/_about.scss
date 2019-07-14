@@ -1,0 +1,21 @@
+section#about{
+   .container{
+       .bio-row{
+           display: flex;
+           align-items: center;
+           padding-top: 60px;
+           .selfie{
+            border-radius: 100%;
+           }
+        
+        
+       }
+       .logo-row{
+            padding-top: 60px;
+            padding-bottom: 60px;
+            .logo{
+                width: 500px;
+            }
+       }
+   }
+}
