@@ -28,38 +28,34 @@ get_header();
 
 <!-- IMAGES GRID  -->
 <section id="image-grid">
-<div class="container-fluid">
-    <div class="row title"> 
-        <h2>Professional Gallery</h2>
-       
-    </div>
-    <hr class="colored">
+  <div class="container-fluid">
+      <div class="row title"> 
+          <h2 class="title">Professional Gallery</h2>
+      </div>
+      <hr class="colored">
     <div class="row"> 
-  <div class="column">
-    <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/1.jpg" style="width:100%">
-    <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/3.jpg" style="width:100%">
-    <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/4.jpg" style="width:100%">
+      <div class="column">
+        <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/1.jpg" style="width:100%">
+        <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/3.jpg" style="width:100%">
+        <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/4.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/5.jpg" style="width:100%">
+        <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/6.jpg" style="width:100%">
+        <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/1.jpg" style="width:100%">
+      </div>  
+      <div class="column">
+        <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/9.jpg" style="width:100%">
+        <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/11.jpg" style="width:100%">
+        <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/1.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/1.jpg" style="width:100%">
+        <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/2.jpg" style="width:100%">
+        <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/1.jpg" style="width:100%">
+      </div>
+    </div>
   </div>
-  <div class="column">
-  <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/5.jpg" style="width:100%">
-    <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/6.jpg" style="width:100%">
-    <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/1.jpg" style="width:100%">
-  </div>  
-  <div class="column">
-  <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/9.jpg" style="width:100%">
-    <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/11.jpg" style="width:100%">
-    <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/1.jpg" style="width:100%">
-  </div>
-  <div class="column">
-  <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/1.jpg" style="width:100%">
-    <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/2.jpg" style="width:100%">
-    <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/1.jpg" style="width:100%">
-  </div>
-</div>
-</div>
-
-
-
 </section>
 <!-- Photo Grid -->
 
@@ -71,7 +67,7 @@ get_header();
 <section class="page-section" id="featuring">
       <div class="container">
         <div class="wow fadeIn text-center">
-          <h2>Featuring</h2>
+          <h2 class="title">Featuring</h2>
           <p class="featuring-desc">Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum </p>
         </div>
         <hr class="colored">
