@@ -2,11 +2,10 @@
   .title {
     margin-bottom: 20px;
     color: #333333;
-    font-size: 18px;
+    font-size: 26px;
     text-align: center;
 
-  
-
+   
   /* Extra Small Devices (phones, 480px and up) */
   @include screen(480){
 
@@ -15,7 +14,7 @@
   /* Small devices (tablets, 768px and up) */
   @include screen('sm'){
    
-      font-size: 24px;
+     
      
     
   }
