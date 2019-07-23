@@ -1,0 +1,42 @@
+.border-line{
+    position: relative;
+    right: 0;
+    left: 0;
+    border: 6px solid #5f5c60;
+    height: 14px;
+    width: 14px;
+    margin: 0 auto;
+    top: -20px;
+    margin-bottom: 20px;
+}
+
+
+.border-line:after, .border-line:before{
+    position: absolute;
+    content: "";
+    top: 2px;
+    height: 1px;
+    width: 60px;
+    background: #5f5c60;
+
+}
+
+.border-line:before{
+    left: 20px;
+}
+
+.border-box{
+    background: #f9cbdf;
+    content: "";
+    height: 6px;
+    left: -2px;
+    margin: 0 auto;
+    right: 0;
+    position: absolute;
+    top: -2px;
+    width: 6px;
+}
+ 
+.border-line:after {
+    right: 20px;
+}

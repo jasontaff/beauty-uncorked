@@ -1,5 +1,4 @@
 section#image-grid{
-        margin-top: 1200px;
        
         .row {
             display: -ms-flexbox; /* IE10 */
@@ -26,6 +25,7 @@ section#image-grid{
            // margin-top: 8px;
             vertical-align: middle;
             width: 100%;
+         
           }
           
           /* Responsive layout - makes a two column-layout instead of four columns */
@@ -34,6 +34,7 @@ section#image-grid{
               -ms-flex: 50%;
               flex: 50%;
               max-width: 50%;
+              
             }
           }
           
@@ -45,5 +46,18 @@ section#image-grid{
               max-width: 100%;
             }
           }
+
+          
+          @include screen('md'){
+            .column img{
+              transition: transform .5s;
+
+              &:hover {
+                transform: scale(1.5);
+              }
+            }
+           
+          }
+         
     
 }
