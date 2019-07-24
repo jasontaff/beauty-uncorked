@@ -10,7 +10,7 @@ body {
     p{
       font-size: 16px;
     }
-    p:blank {
+    p:empty {
       display: none;
     }
 
@@ -52,8 +52,12 @@ body {
       @include screen('sm') {}
       //992px
       @include screen('md') {
+
         margin-top: 90px;
         margin-bottom: 90px;
+        &:first-of-type{
+          margin-top: 180px;
+        }
       }
       @include screen('lg') {}
 
