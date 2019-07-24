@@ -60,43 +60,32 @@ END HERO -->
  END IMAGES GRID -->
 
 
-<!-- FEATURING -->
-<section class="page-section" id="featuring">
+<!-- SERVICES -->
+<section class="page-section" id="services">
       <div class="container">
         <div class="wow fadeIn text-center">
-          <h2 class="title">Featuring</h2>
+          <h2 class="title">Services</h2>
           <div class="border-line">
 								<span class="border-box"></span>
 						</div>
-          <p class="featuring-desc">Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum </p>
         </div>
-     
-        <div class="row text-center feature-row">
+        <div class="row text-center service-row ">
           <div class="col-md-4">
-            <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" >
-              <i class="fa fa-code fa-4x"></i>
+             <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/bottles-glasses.png">
               <h3>Turotiral Parties</h3>
-              <p class="mb-0">Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
-            </div>
           </div>
           <div class=" col-md-4">
-            <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" >
-              <i class="fa fa-edit fa-4x"></i>
+            <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/bottles-glasses.png">
               <h3>1 on 1 lessons</h3>
-              <p class="mb-0">Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
-            </div>
           </div>
           <div class="col-md-4">
-            <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100">
-              <i class="fa fa-tablet fa-4x"></i>
+            <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/bottles-glasses.png">
               <h3>Makeup Artistry</h3>
-              <p class="mb-0">Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
-            </div>
           </div>
         </div>
       </div>
     </section>
-<!-- END FEATURING -->
+<!-- END SERVICES -->
 
 <!-- CLASSES
 <section id="classes" class="pricing section-padding">
@@ -376,9 +365,9 @@ END HERO -->
                           </div>
                       </div>
                   </div>
-              </div><!-- accordion end -->
+              </div> accordion end -->
       </div>
-    </section>-->
+    </section>
 
 
 <!--CONTACT -US -->
