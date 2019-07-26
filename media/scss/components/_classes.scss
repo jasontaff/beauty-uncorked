@@ -6,14 +6,16 @@
     .col-md-4{
         padding-top: 20px;
         padding-bottom: 20px;
-       
+       display: flex;
     }
 }
 
 .single-pricing-box {
-    background: $secondaryColor;
+    background: $secondaryColor; 
     text-align: center;
     border-bottom: 5px solid $primaryColor;
+    display: flex;
+    flex-direction: column;
 }
 
 .single-pricing-box h4,
@@ -40,6 +42,7 @@
     padding: 25px 0px 80px 0px;
     overflow: hidden;
     background: #666666;
+    flex-grow: 1;
     p{
         padding-left: 15px;
         padding-right: 15px;
@@ -57,7 +60,7 @@
     border-style: solid;
     right: 0px;
     bottom: -50px;
-    border-color: #ffffff;
+    border-color: $primaryColor;
     height: 50px;
 }
 

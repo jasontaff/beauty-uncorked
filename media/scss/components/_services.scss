@@ -1,0 +1,46 @@
+section#services{
+  
+    .service-row{
+        padding-top: 20px;
+        img{
+            width: 25px;
+         }
+         h3{
+             padding-top: 20px;
+             font-size: 18px
+         }
+    }
+   
+  /* Extra Small Devices (phones, 480px and up) */
+  @include screen(480){
+
+  }
+
+  /* Small devices (tablets, 768px and up) */
+  @include screen('sm'){
+   
+    .service-row{
+        h3{
+            font-size: 21px;
+        }
+      }
+     
+    
+  }
+
+  /* Medium devices (desktops, 992px and up) */
+  @include screen('md'){
+      .service-row{
+        h3{
+            font-size: 28px;
+        }
+      }
+  
+  }
+
+  /* Large devices (large desktops, 1200px and up) */
+  @include screen('lg'){
+  
+  }
+
+}  

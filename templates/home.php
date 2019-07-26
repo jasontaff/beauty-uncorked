@@ -5,7 +5,7 @@ Template Name:home
 get_header();
 ?>
 
-<!-- HERO -->
+<!-- HERO 
 <section id ="hero">
   <div class="overlay"></div>
   <video id="heroVideo" autoplay muted loop width="1280" height="720" poster="<?php echo get_stylesheet_directory_uri()?>/media/img/vid-poster.png">
@@ -22,9 +22,9 @@ get_header();
     </div>
   </div>
 </section>
-<!-- END HERO -->
+END HERO -->
 
-<!-- IMAGES GRID  -->
+<!-- IMAGES GRID  
 <section id="image-grid">
   <div class="container-fluid">
       <div class="row title"> 
@@ -57,48 +57,37 @@ get_header();
     </div>
   </div>
 </section>
-<!-- END IMAGES GRID
+ END IMAGES GRID -->
 
 
-<!-- FEATURING -->
-<section class="page-section" id="featuring">
+<!-- SERVICES -->
+<section class="page-section" id="services">
       <div class="container">
         <div class="wow fadeIn text-center">
-          <h2 class="title">Featuring</h2>
+          <h2 class="title">Services</h2>
           <div class="border-line">
 								<span class="border-box"></span>
 						</div>
-          <p class="featuring-desc">Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum </p>
         </div>
-     
-        <div class="row text-center feature-row">
+        <div class="row text-center service-row ">
           <div class="col-md-4">
-            <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" >
-              <i class="fa fa-code fa-4x"></i>
+             <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/bottles-glasses.png">
               <h3>Turotiral Parties</h3>
-              <p class="mb-0">Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
-            </div>
           </div>
           <div class=" col-md-4">
-            <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" >
-              <i class="fa fa-edit fa-4x"></i>
+            <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/bottles-glasses.png">
               <h3>1 on 1 lessons</h3>
-              <p class="mb-0">Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
-            </div>
           </div>
           <div class="col-md-4">
-            <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100">
-              <i class="fa fa-tablet fa-4x"></i>
+            <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/bottles-glasses.png">
               <h3>Makeup Artistry</h3>
-              <p class="mb-0">Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
-            </div>
           </div>
         </div>
       </div>
     </section>
-<!-- END FEATURING -->
+<!-- END SERVICES -->
 
-<!-- CLASSES-->
+<!-- CLASSES
 <section id="classes" class="pricing section-padding">
 			<div class="container">
 				<div class="row">
@@ -287,15 +276,113 @@ get_header();
           </div>
         </div>
 
-
-
-        
-
-
-
 			</div>
     </section>
-  <!-- END CLASSES -->
+   END CLASSES -->
+
+  <!--- faq 
+    <section class="faq">
+      <div class="container">
+      <h3 class="title">Frequently Asked Questions</h3>
+      <div class="border-line">
+								<span class="border-box"></span>
+							</div>
+              <div id="accordion">
+                  <div class="card">
+                      <div class="card-header collapsed" data-toggle="collapse" href="#collapseZero">What do I need to bring to a makeup tutorial party?<span class="svg"></span>
+                      </div>
+                      <div id="collapseZero" class="collapse" data-parent="#accordion">
+                          <div class="card-body">
+                          <ul>
+                              <li>Your makeup bag filled with all of your favs, little to no makeup on, and ready to have a great time sipping champs and feeling pretty! </li>
+                          </ul>        
+                          </div> 
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">What exactly will I learn about at a Beauty Uncorked party?<span class="svg"></span>
+                      </div>
+                      <div id="collapseOne" class="collapse" data-parent="#accordion">
+                          <div class="card-body">
+                                  <ul>
+                                      <li>Each party package is different and tailored to your needs. Parties will include education on everything from makeup application, ingredient information, beauty trends, and product recommendations.</li>
+                                  </ul> 
+                          </div> 
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="card-header collapsed" data-toggle="collapse" href="#collapseTwo">Will my full face of makeup be done by an artist?<span class="svg"></span>
+                      </div>
+                      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                          <div class="card-body">
+                              <ul>
+                                  <li>The artist at your party is not just a makeup artist. They have spent over 10 years working in several different areas of the industry to be able to teach women about cosmetic formulas, ingredient safety, and of course amazing artistry techniques for your needs.  You will apply your makeup with step-by-step instructions from your beauty expert. Our experts like to come around and demonstrate techniques on each person. So don’t worry! You won’t ever be left to fend for yourself! </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="card-header collapsed" data-toggle="collapse" href="#collapseThree">Can I bring my own alcohol?<span class="svg"></span>
+                      </div>
+                      <div id="collapseThree" class="collapse" data-parent="#accordion">
+                          <div class="card-body">
+                              <ul>
+                                  <li>Each Beauty Uncorked party comes with 1-2 bottles of wine or champagne depending on class size.  You are more than welcome to bring whatever alcoholic beverages you wish in addition to what is included, as long as the part location is residential! </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="card-header collapsed" data-toggle="collapse" href="#collapseFour">Where do Beauty Uncorked parties take place? <span class="svg"></span>
+                      </div>
+                      <div id="collapseFour" class="collapse" data-parent="#accordion">
+                          <div class="card-body">
+                              <ul>
+                                  <li>The majority of tutorial parties take place either in the home of someone attending the party or in the home of the beauty expert if preferred. Beauty Uncorked has some partnerships with some South Florida locations/venues for hosting, but this will include an additional fee. </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="card-header collapsed" data-toggle="collapse" href="#collapseFive">How do I pay for my Beauty Uncorked party?<span class="svg"></span>
+                      </div>
+                      <div id="collapseFive" class="collapse" data-parent="#accordion">
+                          <div class="card-body">
+                              <ul>
+                                  <li>Payment for your Beauty Uncorked party should be delivered in-full, the day of the event to your beauty expert. Only forms of payment accepted are: check, cash, and electronic deposit through Zelle only.</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="card-header collapsed" data-toggle="collapse" href="#collapseSix">Does Beauty Uncorked offer private makeup lessons? <span class="svg"></span>
+                      </div>
+                      <div id="collapseSix" class="collapse" data-parent="#accordion">
+                          <div class="card-body">
+                              <ul>
+                                  <li>Yes! Our highly recommended and well-seasoned beauty experts are available for booking private makeup lessons. Take a look at our packages page form more information.</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div> accordion end -->
+      </div>
+    </section>
+
+
+<!--CONTACT -US -->
+<section id="contact-us">
+  <div class="container">
+    <div class="row">
+
+      <?=do_shortcode('[contact-form-7 id="19" title="Contact form 1"]')?>
+      
+    </div>
+  </div>
+</section>
+
+
+<!--END CONTACT-US -->
 
 
 
