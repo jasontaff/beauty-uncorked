@@ -11,12 +11,12 @@ section#services{
          }
     }
    
-  /* Extra Small Devices (phones, 480px and up) */
+  /* Extra Small Devices (phones, 480px and up) */ 
   @include screen(480){
 
   }
 
-  /* Small devices (tablets, 768px and up) */
+  /* Small devices (tablets, 768px and up)  */
   @include screen('sm'){
    
     .service-row{

@@ -24,40 +24,6 @@ get_header();
 </section>
 END HERO -->
 
-<!-- IMAGES GRID  
-<section id="image-grid">
-  <div class="container-fluid">
-      <div class="row title"> 
-          <h2 class="title">Professional Gallery</h2>
-      </div>
-      <div class="border-line">
-								<span class="border-box"></span>
-      </div>
-    <div class="row"> 
-      <div class="column">
-        <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/1.jpg">
-        <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/3.jpg">
-        <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/4.jpg">
-      </div>
-      <div class="column">
-        <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/5.jpg">
-        <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/6.jpg">
-        <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/1.jpg">
-      </div>  
-      <div class="column">
-        <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/9.jpg">
-        <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/11.jpg">
-        <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/1.jpg">
-      </div>
-      <div class="column">
-        <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/1.jpg" >
-        <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/2.jpg">
-        <img src="<?php echo get_stylesheet_directory_uri()?>/media/img/grid/1.jpg">
-      </div>
-    </div>
-  </div>
-</section>
- END IMAGES GRID -->
 
 
 <!-- SERVICES -->
