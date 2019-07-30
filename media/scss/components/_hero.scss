@@ -39,17 +39,23 @@
       position: relative;
       z-index: 2;
       img{
-        width: 200px;
+        width: 275px;
       }
     }
 
 
-  @include screen(480) {}
+  @include screen(480) {
+    .container{
+      img{
+        width: 500px;
+      }
+    }
+  }
   @include screen('sm') {
 
     .container{
       img{
-        width: 500px;
+        width: 900px;
       }
     }
     

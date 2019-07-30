@@ -9,10 +9,11 @@
       color: white;
   
       font-size: 14px;
-      &:focus,
+      
       &:hover {  
         color: $secondaryColor; 
         background-color: white;
+        outline: none;
       }
     }
     .navbar-brand { 
