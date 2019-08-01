@@ -2,7 +2,7 @@
       <div class="container text-center">
       <div class="row text-center">
         <div class="col-md-12">
-          <img class="logo" src="<?php echo get_stylesheet_directory_uri()?>/media/img/reverse-logo.png" alt="Beauty-Uncorked">
+        <a  href="/"><img class="logo" src="<?php echo get_stylesheet_directory_uri()?>/media/img/reverse-logo.png" alt="Beauty-Uncorked"></a>
         </div>
       </div>
         <div class="row">
@@ -15,7 +15,7 @@
           <div class="col-md-4 footer-contact-details">
             <h4>
              
-              Follow Us: <i class="fa fa-instagram"></i></h4> 
+            <a href="https://www.instagram.com/beautyuncorked.glam/" target="_blank">Follow Us: <i class="fa fa-instagram"></i></a></h4> 
           
           </div>
           <div class="col-md-4 footer-contact-details">

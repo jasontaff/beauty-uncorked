@@ -76,7 +76,9 @@
           height: 70px;
         }
       }
+      
       .navbar-collapse {
+        justify-content: space-evenly;
         .navbar-nav {
           > .nav-item {
             margin-right: 25px;
@@ -97,7 +99,7 @@
             > .nav-link{ 
               color: #605d61;
               padding: 15px;
-              font-size: 18px;
+              font-size: 24px;
             
               
         

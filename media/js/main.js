@@ -1,7 +1,56 @@
 let modalId = $('#image-gallery');
 
+var classParam = getUrlParameter('class'); // "1234"
+var subjectPlaceHolder = '';
+
+if(classParam){
+    switch (classParam) {
+        case "naturally-fresh":
+            subjectPlaceHolder = "Class: Naturally Fresh"
+          break;
+        case "ladies-nightout":
+                subjectPlaceHolder = "Class: Ladies Night Out";
+          break;
+          case "black-tie-affair":
+                subjectPlaceHolder = "Class: Black Tie Affair";
+          break;
+          case "vegan-vixen":
+                subjectPlaceHolder = "Class: Vegan Vixen";
+          break;
+          case "bridal-glam":
+                subjectPlaceHolder = "Class: Bridal Glam";
+          break;
+          case "tis-the-season":
+                subjectPlaceHolder = "Class: Tis the Season";
+          break;
+          case "luxury-for-less":
+                subjectPlaceHolder = "Class: Luxury for Less";
+          break;
+          
+        default:
+
+      }
+   if(subjectPlaceHolder != ''){
+       $('.subject-field').attr('disabled', true);
+       $('.subject-field').attr("placeholder", subjectPlaceHolder);
+   }
+}
+// "edit"
+
+function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+};
+
 $(document)
   .ready(function () {
+
+
+
+
+
 
     loadGallery(true, 'a.thumbnail');
 
@@ -65,6 +114,10 @@ $(document)
           updateGallery($(this));
         });
     }
+
+
+
+
   });
 
 // build key actions

@@ -1,16 +1,22 @@
 section#image-grid{
-       
+       margin-top: 0px;
         .row {
             display: -ms-flexbox; /* IE10 */
             display: flex;
             -ms-flex-wrap: wrap; /* IE10 */
             flex-wrap: wrap;
             padding: 0px;
-        
+            &.title{
+              justify-content: center;
+            }
+
             h2{
                 margin: 0 auto;
             }
-        
+            .promo-banner-container{
+              padding-bottom: 20px;
+
+            }
           }
           
           /* Create four equal columns that sits next to each other */
@@ -49,6 +55,15 @@ section#image-grid{
 
           
           @include screen('md'){
+            .row{
+              &.title{
+                .promo-banner-container{
+                  img{
+                    width: 700px;
+                  }
+                }
+              }
+            }
             .column img{
               transition: transform .5s;
 
