@@ -32,7 +32,8 @@ if(classParam){
       }
    if(subjectPlaceHolder != ''){
        $('.subject-field').attr('disabled', true);
-       $('.subject-field').attr("value", subjectPlaceHolder);
+       $('.subject-field').val(subjectPlaceHolder);
+       
    }
 }
 // "edit"
