@@ -1,7 +1,145 @@
-$("document").ready(function () {
+let modalId = $('#image-gallery');
 
-    /*****Image Grid ****/
+var classParam = getUrlParameter('class'); // "1234"
+var subjectPlaceHolder = '';
 
-      
+if(classParam){
+    switch (classParam) {
+        case "naturally-fresh":
+            subjectPlaceHolder = "Class: Naturally Fresh"
+          break;
+        case "ladies-nightout":
+                subjectPlaceHolder = "Class: Ladies Night Out";
+          break;
+          case "black-tie-affair":
+                subjectPlaceHolder = "Class: Black Tie Affair";
+          break;
+          case "vegan-vixen":
+                subjectPlaceHolder = "Class: Vegan Vixen";
+          break;
+          case "bridal-glam":
+                subjectPlaceHolder = "Class: Bridal Glam";
+          break;
+          case "tis-the-season":
+                subjectPlaceHolder = "Class: Tis the Season";
+          break;
+          case "luxury-for-less":
+                subjectPlaceHolder = "Class: Luxury for Less";
+          break;
+          
+        default:
 
-});
+      }
+   if(subjectPlaceHolder != ''){
+       $('.subject-field').attr('disabled', true);
+       $('.subject-field').attr("placeholder", subjectPlaceHolder);
+   }
+}
+// "edit"
+
+function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+};
+
+$(document)
+  .ready(function () {
+
+
+
+
+
+
+    loadGallery(true, 'a.thumbnail');
+
+    //This function disables buttons when needed
+    function disableButtons(counter_max, counter_current) {
+      $('#show-previous-image, #show-next-image')
+        .show();
+      if (counter_max === counter_current) {
+        $('#show-next-image')
+          .hide();
+      } else if (counter_current === 1) {
+        $('#show-previous-image')
+          .hide();
+      }
+    }
+
+    /**
+     *
+     * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
+     * @param setClickAttr  Sets the attribute for the click handler.
+     */
+
+    function loadGallery(setIDs, setClickAttr) {
+      let current_image,
+        selector,
+        counter = 0;
+
+      $('#show-next-image, #show-previous-image')
+        .click(function () {
+          if ($(this)
+            .attr('id') === 'show-previous-image') {
+            current_image--;
+          } else {
+            current_image++;
+          }
+
+          selector = $('[data-image-id="' + current_image + '"]');
+          updateGallery(selector);
+        });
+
+      function updateGallery(selector) {
+        let $sel = selector;
+        current_image = $sel.data('image-id');
+        $('#image-gallery-title')
+          .text($sel.data('title'));
+        $('#image-gallery-image')
+          .attr('src', $sel.data('image'));
+        disableButtons(counter, $sel.data('image-id'));
+      }
+
+      if (setIDs == true) {
+        $('[data-image-id]')
+          .each(function () {
+            counter++;
+            $(this)
+              .attr('data-image-id', counter);
+          });
+      }
+      $(setClickAttr)
+        .on('click', function () {
+          updateGallery($(this));
+        });
+    }
+
+
+
+
+  });
+
+// build key actions
+$(document)
+  .keydown(function (e) {
+    switch (e.which) {
+      case 37: // left
+        if ((modalId.data('bs.modal') || {})._isShown && $('#show-previous-image').is(":visible")) {
+          $('#show-previous-image')
+            .click();
+        }
+        break;
+
+      case 39: // right
+        if ((modalId.data('bs.modal') || {})._isShown && $('#show-next-image').is(":visible")) {
+          $('#show-next-image')
+            .click();
+        }
+        break;
+
+      default:
+        return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+  });

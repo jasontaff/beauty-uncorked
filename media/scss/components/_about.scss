@@ -3,11 +3,13 @@ section#about{
        .bio-row{
            display: flex;
            align-items: center;
-           padding-top: 60px;
+           
            .selfie{
             border-radius: 100%;
            }
-        
+        .bio-desc{
+            padding-top: 40px;
+        } 
         
        }
        .logo-row{
@@ -18,4 +20,34 @@ section#about{
             }
        }
    }
+
+
+      
+/* Extra Small Devices (phones, 480px and up) */ 
+@include screen(480){
+
+}
+
+/* Small devices (tablets, 768px and up)  */
+@include screen('sm'){
+ .container{
+     .bio-row{
+         .bio-desc{
+             padding-top: unset;
+         } 
+     }
+ }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@include screen('md'){
+
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@include screen('lg'){
+
+}
+
 }

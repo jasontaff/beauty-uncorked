@@ -1,0 +1,63 @@
+section#gallery{
+    .container{
+       
+        img {
+            border: 1px solid #ddd; /* Gray border */
+            border-radius: 4px;  /* Rounded border */
+            padding: 5px; /* Some padding */
+            width: 500px; /* Set a small width */
+          }
+          
+          /* Add a hover effect (blue shadow) */
+          img:hover {
+            box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+          }
+
+          .btn:focus, .btn:active, button:focus, button:active {
+            outline: none !important;
+            box-shadow: none !important;
+          }
+          
+          #image-gallery .modal-footer{
+            display: block;
+          }
+          
+          .thumb{
+            margin-top: 15px;
+            margin-bottom: 15px;
+          }
+
+    }
+ 
+ 
+       
+ /* Extra Small Devices (phones, 480px and up) */ 
+ @include screen(480){
+ 
+ }
+ 
+ /* Small devices (tablets, 768px and up)  */
+ @include screen('sm'){
+
+ }
+ 
+ /* Medium devices (desktops, 992px and up) */
+ @include screen('md'){
+ 
+ 
+ }
+ 
+ /* Large devices (large desktops, 1200px and up) */
+ @include screen('lg'){
+ 
+ }
+ 
+ }
+
+ .modal-body img{
+     width: unset !important;
+ }
+
+
+
+

@@ -13,7 +13,7 @@
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ">
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="/about/">About</a>
             </li>

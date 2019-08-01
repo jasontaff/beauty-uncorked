@@ -1,0 +1,54 @@
+section#contact-us{
+    .container{
+    
+     input{
+         text-align: center;
+     }
+     input,
+     textarea{
+         width: 100%;
+
+     }
+     input[type=submit]{
+         width: 25%;
+         background-color: #f8c7dd;
+         &:hover,
+         &:focus,
+         &:active{
+             cursor: pointer;
+             outline: none;
+         }
+     }
+
+    }
+ 
+ 
+       
+ /* Extra Small Devices (phones, 480px and up) */ 
+ @include screen(480){
+ 
+ }
+ 
+ /* Small devices (tablets, 768px and up)  */
+ @include screen('sm'){
+
+ }
+ 
+ /* Medium devices (desktops, 992px and up) */
+ @include screen('md'){
+ 
+ 
+ }
+ 
+ /* Large devices (large desktops, 1200px and up) */
+ @include screen('lg'){
+ 
+ }
+ 
+ }
+
+
+
+
+
+
