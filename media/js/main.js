@@ -8,7 +8,7 @@ if(classParam){
         case "naturally-fresh":
             subjectPlaceHolder = "Class: Naturally Fresh"
           break;
-        case "ladies-nightout":
+        case "ladies-night-out":
                 subjectPlaceHolder = "Class: Ladies Night Out";
           break;
           case "black-tie-affair":
