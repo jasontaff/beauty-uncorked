@@ -10,6 +10,9 @@ footer#footer {
 
     a {
         color: fade-out(white, 0.3);
+        span{
+            font-size: 22px;
+        }
         &:hover {
             color: white;
         }

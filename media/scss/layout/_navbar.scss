@@ -71,6 +71,7 @@
         font-size: 26px;
         line-height: 50px;
         img {
+          display: none;
           width: auto;
           height: 70px;
         }
@@ -130,6 +131,11 @@
       }
     }
 
+    @include screen('lg'){
+      #mainNav .navbar-collapse .navbar-nav>.nav-item>.nav-link{
+        font-size: 24px;
+      }
+    }
 
   }
   

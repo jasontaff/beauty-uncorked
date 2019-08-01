@@ -40,7 +40,14 @@ section#services{
 
   /* Large devices (large desktops, 1200px and up) */
   @include screen('lg'){
-  
+    .service-row{
+        img{
+            width: 35px;
+         }
+        h3{
+            font-size: 36px;
+        }
+      }
   }
 
 }  
