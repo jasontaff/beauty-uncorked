@@ -71,14 +71,11 @@
         font-size: 26px;
         line-height: 50px;
         img {
-          display: none;
           width: auto;
           height: 70px;
         }
       }
-      
       .navbar-collapse {
-        justify-content: space-evenly;
         .navbar-nav {
           > .nav-item {
             margin-right: 25px;
@@ -99,7 +96,7 @@
             > .nav-link{ 
               color: #605d61;
               padding: 15px;
-              font-size: 24px;
+              font-size: 18px;
             
               
         
@@ -134,10 +131,10 @@
     }
 
     @include screen('lg'){
-      #mainNav .navbar-collapse .navbar-nav>.nav-item>.nav-link{
-        font-size: 24px;
+     .navbar-collapse .navbar-nav>.nav-item>.nav-link{
+        font-size: 21px;
       }
     }
-
+ 
   }
   

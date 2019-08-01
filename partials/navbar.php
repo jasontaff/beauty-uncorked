@@ -13,7 +13,7 @@
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ">
+          <ul class="navbar-nav ml-auto ">
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="/about/">About</a>
             </li>
@@ -24,13 +24,10 @@
               <a class="nav-link js-scroll-trigger" href="/faq/">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/gallery/">Gallery</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="/contact-us/">Contact us</a>
             </li>
            
           </ul>
         </div>
       </div>
-  </nav>
+  </nav> 
